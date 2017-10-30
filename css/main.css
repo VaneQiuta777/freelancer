@@ -3,7 +3,7 @@
     overflow-x: hidden; 
     margin:0
 }  
-  
+/*Navigation*/
 #mainNav {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 700;
@@ -28,7 +28,7 @@
     color: white;
     outline: none;
     text-decoration: none;
-    float: right;
+    float: right; /*intercambio de posición de los elementos: nav-link*/
     margin-top: 30px;
 }
 #uno {
@@ -41,33 +41,34 @@
 #mainNav .nav-link:hover {
     color: #18BC9C;
 } 
-
 #mainNav .navbar-brand:hover {
     color: white; 
 }
-header.principal-block {
+/*Header*/
+header.principalBlock {
     padding-top: 100px;
     padding-bottom: 50px;
     text-align: center;
     color: white;
     background: #18BC9C; 
 }
-header.principal-block img {
+header.principalBlock img {
     display: block;
     margin: 0 auto 20px; 
     margin-top: 100px;
 }
-header.principal-block .intro-text .name {
+header.principalBlock .intro-text .name {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 85px;
     font-weight: 700;
     display: block;
     text-transform: uppercase; 
 }
-header.principal-block .intro-text .skills {
+header.principalBlock .intro-text .skills {
     font-size: 31px;
     font-weight: 300; 
 }
+/*línea separadora, pendiente. */
 hr.star-light,
 hr.star-primary {
     max-width: 250px;
@@ -100,7 +101,6 @@ hr.star-primary {
 hr.star-primary:after {
     color: #2C3E50;
     background-color: white; }
-
 .img-fluid {
     margin: 0 auto; 
     width: 300px;
@@ -127,7 +127,7 @@ section h2 {
 section.success {
     color: white;
     background: #18BC9C; }
-  
+/*Portfolio Section*/
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 20px 45px;
@@ -175,10 +175,7 @@ section.success {
     margin: 0;
     text-align: center;
 }
-/*#portfolio * {
-    z-index: 2; 
-}
-  */
+/*Success Section*/
 p {
     font-size: 20px;
     margin: 0 300px 60px;
@@ -187,10 +184,24 @@ p {
     column-width: 25px; 
     text-align: left;
     line-height: 32px;
-}  
-/*p.small {
-    font-size: 16px; 
-} */
+}
+.btn-outline {
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    border: solid 2px white;
+    border-radius: 5px;
+    background: transparent; 
+    margin-left: 40%;
+}
+.btn-outline.active, .btn-outline:active, .btn-outline:focus, .btn-outline:hover {
+    color: #18BC9C;
+    border: solid 2px white;
+    background: white; 
+}
+/*Contact Section : questionnaire*/
 .control-group {
     width: 50%;
     text-align: left;
@@ -199,7 +210,6 @@ p {
 }
 .form-control {
     height: 40px;
-    
 }
 .floating-label-form-group {
     position: relative;
@@ -243,7 +253,8 @@ p {
     margin-left: 350px;
     border-radius: 5px;
     padding: 10px 15px;
-    box-shadow: none;
+    box-shadow: none; /*pendiente retirarle la sombra*/
+    text-decoration: none;
 }
 .btn-success.focus, .btn-success:focus {
     color: white;
@@ -254,6 +265,7 @@ p {
     border-color: #11866f;
     background-color: #128f76; 
 }
+/*Footer: above*/
 footer {
     color: white; 
 }
@@ -269,7 +281,7 @@ footer h3 {
 .footer-above p {
     margin: 10px;
     text-align: center;
-    column-count: 1
+    column-count: 1 /*en cada side, se incluyó una columna para alinear al centro cada párrafo*/
 }
 .footer-side2 .list-inline {
     text-decoration: none;
@@ -282,21 +294,21 @@ footer h3 {
     margin-left: 10%;
 }
 .footer-side1{
-    width: 25%;  /*Este será el ancho que tendrá tu columna*/
-    float:left; /*Aqui determinas de lado quieres quede esta "columna" */
+    width: 25%;  
+    float:left; 
     margin-left: 100px;
     /*outline: 1px solid red;*/
     text-align: center;
     } 
 .footer-side2{
-    width: 30%;  /*Este será el ancho que tendrá tu columna*/
-    float:left; /*Aqui determinas de lado quieres quede esta "columna" */
+    width: 30%; 
+    float:left; 
     margin-left: 20px;
     /*outline: 1px solid red;*/
     }
 .footer-side3 {
-    width: 30%;  /*Este será el ancho que tendrá tu columna*/
-    float:left; /*Aqui determinas de lado quieres quede esta "columna" */
+    width: 30%; 
+    float:left; 
     margin-left: 20px;
     text-align: center;
     /*outline: 1px solid red;*/
@@ -304,22 +316,6 @@ footer h3 {
 footer .footer-above {
     padding-top:40px;
     background-color: #2C3E50; 
-}
-.btn-outline {
-    font-size: 20px;
-    margin-top: 20px;
-    padding: 15px;
-    transition: all 0.3s ease-in-out;
-    color: white;
-    border: solid 2px white;
-    border-radius: 5px;
-    background: transparent; 
-    margin-left: 40%;
-}
-.btn-outline.active, .btn-outline:active, .btn-outline:focus, .btn-outline:hover {
-    color: #18BC9C;
-    border: solid 2px white;
-    background: white; 
 }
 .btn-outline-icon {
     font-size: 10px;
@@ -339,7 +335,7 @@ footer .footer-above {
 }
 .btn-social {
     font-size: 20px;
-    line-height: 35px;
+    line-height: 30px;
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -358,6 +354,7 @@ footer .footer-above {
 .footer-side3 a.active, .footer-side3 a:active, .footer-side3 a:focus, .footer-side3 a:hover {
     text-decoration: underline;
 }
+/*Footer: below*/
 footer .footer-below {
     padding: 35px 0;
     background-color: #2c3e50; 
